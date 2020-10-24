@@ -1,6 +1,8 @@
 # Autotests with playwright
 
-# Install
+### Install
+```
 python -m playwright install
 pip install playwright
-pip install pytest-playwright
+pip install pytest-playwright`
+```
