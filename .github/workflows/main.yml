@@ -2,8 +2,11 @@ name: "Run playwright tests"
 
 on:
   push:
-    branches:
-    - main
+    branches: 
+    - master
+  pull_request:
+    branches: 
+    - master
 
 jobs:
   e2e-tests:
