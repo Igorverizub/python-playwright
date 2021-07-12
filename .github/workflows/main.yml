@@ -11,6 +11,10 @@ on:
 jobs:
   e2e-tests:
     runs-on: ubuntu-latest # or macos-latest, windows-latest
+    
+    defaults:
+      run:
+        working-directory: python-playwright
 
 
     steps:
@@ -28,4 +32,4 @@ jobs:
       - name: Ensure browsers are installed
         run: python -m playwright install
       - name: Run your tests
-        run: pytest /search_test.py
+        run: pytest
