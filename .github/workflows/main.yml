@@ -28,4 +28,4 @@ jobs:
       - name: Ensure browsers are installed
         run: python -m playwright install
       - name: Run your tests
-        run: pytest
+        run: pytest search_test.py
