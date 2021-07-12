@@ -1,2 +1,9 @@
-- name: Run Playwright tests
-  uses: microsoft/playwright-github-action@v1.4.4
+- name: Setup Playwright
+  # You may pin to the exact commit or the version.
+  # uses: maxmilton/action-setup-playwright@2d6caa385908bbd298c4302685378300a1659e02
+  uses: maxmilton/action-setup-playwright@v1.0.6
+  with:
+    # Comma-separated list of the browsers you intend to launch
+    browsers: # optional, default is chromium, firefox, webkit
+    # Specify whether browsers will run in headless mode
+    headless: # optional, default is true
